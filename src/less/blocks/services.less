@@ -7,7 +7,7 @@
 
   &__row {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   &__item {
@@ -16,7 +16,7 @@
     padding-left: 23px;
     padding-top: 83px;
     padding-right: 23px;
-    padding-bottom: 21px;
+    padding-bottom: 80px;
     text-decoration: none;
     text-align: left;
     color: #000;
@@ -30,11 +30,12 @@
     &:after {
       content: '';
       position: absolute;
-      width: 23px;
-      height: 23px;
+      width: 33px;
+      height: 33px;
       right: 39px;
       bottom: 28px;
       background-image: url(../img/arrow.png);
+      background-repeat: no-repeat;
     }
 
     &:before {
@@ -90,7 +91,10 @@
 
   &__price {
     display: inline-block;
-    margin-top: 26px;
+    position: absolute;
+    left: 25px;
+    bottom: 21px;
+    // margin-top: 26px;
     padding-left: 16px;
     padding-top: 8px;
     padding-right: 12px;
