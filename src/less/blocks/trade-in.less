@@ -1,0 +1,80 @@
+.trade-in {
+  text-align: center;
+  background: url(../img/trade-in.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    padding-top: 64px;
+    padding-bottom: 47px;
+    background: rgba(0,0,0,0.52);
+  }
+
+  &__container {
+    .container;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    position: relative;
+    flex-basis: 30%;
+    color: #fff;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -15px;
+    }
+
+    &--algorithm:before {
+      width: 69px;
+      height: 48px;
+      background-image: url(../img/trade-in__item--algorithm.png);
+    }
+
+    &--process:before {
+      width: 67px;
+      height: 67px;
+      background-image: url(../img/trade-in__item--process.png);
+    }
+
+    &--conditions:before {
+      width: 64px;
+      height: 49px;
+      background-image: url(../img/trade-in__item--conditions.png);
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 90px;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  &__item-text {
+    font-size: 18px;
+    line-height: 30px;
+
+    & a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
